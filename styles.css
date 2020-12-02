@@ -1,0 +1,261 @@
+body{
+    background-color: #c1c8;    
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    padding-bottom: 10px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.clr{
+	clear:both;
+}
+
+.hp-color{color: lime;}
+
+.js-color{color: #ffe400;}
+
+.html-color{color: #ff652f;}
+
+.css-color{color: #2965f1;}
+
+
+/* Main-Header styling */
+
+#main-header{
+    background-color: #272727;
+    border-bottom: 1px solid #ffe400;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header h1{
+    float: left;
+    margin: 0;
+}
+
+header .google-form{
+    float: right;
+    margin-top:8px;
+}
+
+.error{
+    background-color: red;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+/*navbar styling */
+
+#navbar{
+    background-color: #272727;
+    border-bottom: solid 3px #555;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+nav li{
+    display: inline;
+    padding: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 15px bolder Arial, Helvetica, sans-serif;
+}
+
+
+/* Styling for all showcases */
+
+#showcase{
+    height: 300px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.homepage-splash{
+    background-image: url(images/showcase_1.jpg);
+    background-position: center;
+    background-size: 110%;
+}
+
+#showcase h1{
+    font-size: 50px;
+    padding-top: 40px;
+    color: lime;
+}
+
+
+#showcase .html-splashlogo{
+    width:210px;
+    padding-top: 40px;
+}
+
+.html-splash{
+    background-image: url(images/showcase_1.jpg);
+    background-position: center;
+    background-size: 110%;
+}
+
+
+#showcase .css-splashlogo{
+    width:150px;
+    padding-top: 40px;
+}
+.css-splash{
+    background-image: url(images/showcase_1.jpg);
+    background-position: center;
+    background-size: 110%;
+}
+
+#showcase .js-splashlogo{
+    width:210px;
+    padding-top: 40px;
+}
+
+.js-splash{
+    background-image: url(images/showcase_1.jpg);
+    background-position: center;
+    background-size: 110%;
+}
+
+
+
+
+/* Homepage icon styling */
+
+#icons .icon{
+    float: left;
+    width: 33%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#icons .icon:first-child img, .icon:last-child img{
+    width: 50%;
+}
+
+#icons .icon:nth-child(2) img{
+    width: 36%;
+}
+
+
+
+
+
+/* footer styling */
+
+#footer{
+    background: #555;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top:50px;
+}
+
+
+
+
+/* Source code styling */
+
+#htmlcodes .html:nth-child(even){
+    float:left;
+    width: 48%;
+    padding-left: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#htmlcodes .html:nth-child(odd){
+    float:right;
+    width: 48%;
+    padding-right: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#htmlcodes .html img{
+    width: 100%;
+}
+
+#htmlcodes h1, #csscodes .css, #jscodes .js{
+    text-align: center;
+}
+
+#csscodes .css img, #jscodes .js img{
+    width: 60%;
+}
+
+
+
+/* Media Queries for mobiles size adjustment */
+
+
+/* navbar adjustment */
+
+@media(max-width:750px){
+    nav li{
+        padding: 16px;
+    }
+}
+
+@media(max-width:500px){
+    nav .container{
+        width: 100%;
+    }
+    nav li{
+        padding: 5px;
+    }
+}
+
+/* Showcase adjustment */
+
+@media(max-width:505px){
+    section .container{
+        width: 100%;
+    }
+
+    #showcase h1{
+        padding-top: 0px;
+    }
+
+    .homepage-splash{
+        background-size: 150%;
+    }
+}
+
+/* Sourcecode Adjustment */
+
+@media(max-width:800px){
+    #htmlcodes .html:nth-child(odd
+    ){
+        width:100%;
+        float: center;
+        padding-left: 5%;
+        box-sizing: none;
+    }
+    #htmlcodes .html:nth-child(even){
+        width: 100%;
+        float: center;
+        padding-right: 5%;
+        box-sizing: none;
+    }
+}
